@@ -50,6 +50,7 @@ public class Sistema {
             System.out.println("Nome: %s".formatted(usuario.getNome()));
             System.out.println("Matrícula: %d".formatted(usuario.getMatricula()));
             System.out.println("Curso: %s".formatted(usuario.getCurso()));
+            System.out.println("Tipo: %s".formatted(usuario.getTipoUsuario()));
         }  
 
         System.out.println("----------------------");
