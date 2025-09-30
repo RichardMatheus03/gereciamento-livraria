@@ -1,5 +1,5 @@
 
-public class Usuario {
+public abstract class Usuario {
 
     private int matricula;
     private String nome;
@@ -30,5 +30,6 @@ public class Usuario {
         this.curso = curso;
     }
 
+    public abstract int getPrazoEmprestimo();
 
 }

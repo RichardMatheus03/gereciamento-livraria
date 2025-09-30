@@ -21,7 +21,9 @@ public class Main {
             System.out.println("2 - Lista usuários");
             System.out.println("3 - Cadastrar livro");
             System.out.println("4 - Listar livros");
-            
+            System.out.println("5 - Realizar empréstimo");
+            System.out.println("6 - Listar empréstimos");
+
             System.out.println("9 - Sair");
             option = leitor.nextInt();
 
@@ -31,6 +33,16 @@ public class Main {
                     break;
                 case 2:
                     sistema.listarUsuarios();
+                    break;
+                case 3:
+                    sistema.cadastrarLivro();
+                    break;
+                case 4:
+                    sistema.listarLivros();
+                    break;
+                case 5:
+                    sistema.realizarEmprestimo();
+                    break;
                 default:
                     break;
             }
