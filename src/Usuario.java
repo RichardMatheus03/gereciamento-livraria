@@ -32,4 +32,6 @@ public abstract class Usuario {
 
     public abstract int getPrazoEmprestimo();
 
+    public abstract String getTipoUsuario();
+
 }

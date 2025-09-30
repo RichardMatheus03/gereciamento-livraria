@@ -10,4 +10,9 @@ public class Aluno extends Usuario {
         return 7;
     }
 
+    @Override
+    public String getTipoUsuario() {
+        return "Aluno";
+    }
+
 }

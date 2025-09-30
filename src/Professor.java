@@ -7,4 +7,10 @@ public class Professor extends Usuario {
     public int getPrazoEmprestimo() {
         return 14;
     }
+
+    @Override
+    public String getTipoUsuario() {
+        return "Professor";
+    }
+
 }
