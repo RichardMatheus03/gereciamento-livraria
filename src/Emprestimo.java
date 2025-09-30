@@ -1,5 +1,5 @@
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Emprestimo {
     int id;
@@ -8,17 +8,17 @@ public class Emprestimo {
 
     Usuario usuario;
 
-    Date dataEmprestimo; // Vou usar o tipo Date
-    Date dataPrevista;
-    Date Datadevolucao;
+    LocalDate dataEmprestimo; // Vou usar o tipo LocalDate
+    LocalDate dataPrevista;
+    LocalDate dataDevolucao;
 
-    public Emprestimo(int id, Livro livro, Usuario usuario, Date dataEmprestimo, Date dataPrevista, Date datadevolucao) {
+    public Emprestimo(int id, Livro livro, Usuario usuario, LocalDate dataEmprestimo, LocalDate dataPrevista, LocalDate dataDevolucao) {
         this.id = id;
         this.livro = livro;
         this.usuario = usuario;
         this.dataEmprestimo = dataEmprestimo;
         this.dataPrevista = dataPrevista;
-        this.Datadevolucao = datadevolucao;
+        this.dataDevolucao = dataDevolucao;
     }
 
     public int getId() {
@@ -27,26 +27,26 @@ public class Emprestimo {
     public void setId(int id) {
         this.id = id;
     }
-    
-    public Date getDataEmprestimo() {
+
+    public LocalDate getDataEmprestimo() {
         return dataEmprestimo;
     }
-    public void setDataEmprestimo(Date dataEmprestimo) {
+    public void setDataEmprestimo(LocalDate dataEmprestimo) {
         this.dataEmprestimo = dataEmprestimo;
     }
-    
-    public Date getDataPrevista() {
+
+    public LocalDate getDataPrevista() {
         return dataPrevista;
     }
-    public void setDataPrevista(Date dataPrevista) {
+    public void setDataPrevista(LocalDate dataPrevista) {
         this.dataPrevista = dataPrevista;
     }
 
-    public Date getDatadevolucao() {
-        return Datadevolucao;
+    public LocalDate getDataDevolucao() {
+        return dataDevolucao;
     }
-    public void setDatadevolucao(Date datadevolucao) {
-        Datadevolucao = datadevolucao;
+    public void setDataDevolucao(LocalDate dataDevolucao) {
+        this.dataDevolucao = dataDevolucao;
     }
 
     public Livro getLivro() {
