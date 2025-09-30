@@ -1,9 +1,9 @@
 
 public class Usuario {
 
-    int matricula;
-    String nome;
-    String curso;
+    private int matricula;
+    private String nome;
+    private String curso;
 
     public Usuario(int matricula, String nome, String curso) {
         this.matricula = matricula;

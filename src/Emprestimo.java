@@ -2,15 +2,15 @@
 import java.time.LocalDate;
 
 public class Emprestimo {
-    int id;
+    private int id;
 
-    Livro livro;
+    private Livro livro;
 
-    Usuario usuario;
+    private Usuario usuario;
 
-    LocalDate dataEmprestimo; // Vou usar o tipo LocalDate
-    LocalDate dataPrevista;
-    LocalDate dataDevolucao;
+    private LocalDate dataEmprestimo; // Vou usar o tipo LocalDate
+    private LocalDate dataPrevista;
+    private LocalDate dataDevolucao;
 
     public Emprestimo(int id, Livro livro, Usuario usuario, LocalDate dataEmprestimo, LocalDate dataPrevista, LocalDate dataDevolucao) {
         this.id = id;
